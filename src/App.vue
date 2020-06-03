@@ -62,25 +62,25 @@ export default {
       return `https://img.shields.io/static/v1?label=${
         this.type == "framework" ? "Framework" : "Language"
       }&message=${encodeURIComponent(
-        this.name || "React"
+        this.name || "Vue"
       )}&color=${encodeURIComponent(
-        this.color.replace(/\#/g, "") || "blue"
+        this.color.replace(/\#/g, "") || "4FC08D"
       )}&logo=${
         this.fileDataURL ||
         encodeURIComponent(
-          this.icon.toLowerCase().replace(/ /g, "-") || "react"
+          this.icon.toLowerCase().replace(/ /g, "-") || "vue.js"
         )
       }&logoColor=white&style=for-the-badge`;
     },
     simpleBadgeUrl() {
       return `https://img.shields.io/static/v1?label=&message=${encodeURIComponent(
-        this.name || "React"
+        this.name || "Vue"
       )}&color=${encodeURIComponent(
-        this.color.replace(/\#/g, "") || "blue"
+        this.color.replace(/\#/g, "") || "4FC08D"
       )}&logo=${
         this.fileDataURL ||
         encodeURIComponent(
-          this.icon.toLowerCase().replace(/ /g, "-") || "react"
+          this.icon.toLowerCase().replace(/ /g, "-") || "vue.js"
         )
       }&logoColor=white&style=for-the-badge`;
     },
